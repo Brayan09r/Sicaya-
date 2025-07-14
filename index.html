@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicaya - Patrimonio Cultural de Junín</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2A5F38; /* Verde andino */
+            --secondary: #8B5A2B; /* Café tradicional */
+            --accent: #D4A59A; /* Terracota */
+            --light: #F8F4E3; /* Fondo claro */
+            --dark: #1E1E1E; /* Texto oscuro */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/sicaya-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Secciones */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .divider {
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            margin: 0 auto;
+        }
+        
+        /* Tarjetas */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-img {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+        }
+        
+        .card:hover .card-img img {
+            transform: scale(1.05);
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        /* Sección especial */
+        .highlight-section {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .highlight-section h2,
+        .highlight-section h3 {
+            color: white;
+        }
+        
+        .highlight-section .divider {
+            background-color: white;
+        }
+        
+        /* Grid para agricultura */
+        .agriculture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .card-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Sicaya</h1>
+            <p>Distrito histórico de Huancayo, Junín - Perú</p>
+            <p>Patrimonio cultural, agrícola y natural</p>
+        </div>
+    </header>
+
+    <!-- Sección Introducción -->
+    <section id="introduccion">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Sicaya</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/descarga.jpg" alt="Vista panorámica de Sicaya">
+                </div>
+                <div class="card-content">
+                    <h3>Historia y Tradición</h3>
+                    <p>Sicaya es un distrito en la provincia de Huancayo, departamento de Junín, Perú, conocido por su rica historia y tradiciones, especialmente por su participación en la Guerra del Pacífico y su fuerte identidad cultural.</p>
+                    <p>La Municipalidad Distrital de Sicaya representa la autoridad administrativa local encargada del gobierno y la gestión del distrito, promoviendo el desarrollo integral y mejorando la calidad de vida de sus habitantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Agricultura -->
+    <section id="agricultura" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Agricultura en Sicaya</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="agriculture-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/images (1).jpg" alt="Cultivo de ajo en Sicaya">
+                    </div>
+                    <div class="card-content">
+                        <h3>El Ajo de Sicaya</h3>
+                        <p>Las tierras agrícolas del distrito representan una importante fuente de producción agrícola, especialmente de ajo, y contribuyen a la economía local.</p>
+                        <p>Sicaya es reconocida por sus áreas aptas para el cultivo del ajo y por contar con agricultores con experiencia en este cultivo, lo que ha permitido la exportación de este producto a Brasil.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/descarga (1).jpg" alt="Sistemas de riego en Sicaya">
+                    </div>
+                    <div class="card-content">
+                        <h3>Proyectos de Riego</h3>
+                        <p>El distrito ha sido objeto de proyectos de mejoramiento de riego para aumentar la productividad y mejorar las condiciones socioeconómicas de sus habitantes.</p>
+                        <p>Estas iniciativas han permitido optimizar el uso del agua y aumentar la producción agrícola en la región.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Plaza de Toros -->
+    <section id="plaza-toros">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plaza de Toros</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/descarga (2).jpg" alt="Plaza de Toros de Sicaya">
+                </div>
+                <div class="card-content">
+                    <h3>Patrimonio Cultural</h3>
+                    <p>La plaza de toros representa un recinto circular o semicircular, generalmente al aire libre, destinado a la celebración de espectáculos taurinos como corridas de toros, rejones, y otros eventos relacionados con la tauromaquia.</p>
+                    <p>Además de su función como escenario de estos espectáculos, la plaza de toros también es un punto de encuentro comunitario y un símbolo de la cultura y tradiciones locales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Biodiversidad -->
+    <section id="biodiversidad" class="highlight-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Biodiversidad de Sicaya</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/descarga (3).jpg" alt="Flora y fauna de Sicaya">
+                </div>
+                <div class="card-content">
+                    <h3>Flora y Fauna</h3>
+                    <p>La flora de Sicaya se caracteriza por especies como el aliso, el maíz (con más de cien variedades), la calabaza, la granadilla, el tomate, la papaya y la caigua.</p>
+                    <p>En cuanto a la fauna, se pueden encontrar aves como el zorzal gris y el huipcho, así como zorros, vizcachas, zorrillos, venados, cuyes, osos, zorzal negro, sapos, gavilanes, cóndor, y puma. Además, la trucha es característica de las lagunas de la zona.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tradiciones -->
+    <section id="tradiciones">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tradiciones Religiosas</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/descarga (4).jpg" alt="Entrada de Ramos en Sicaya">
+                </div>
+                <div class="card-content">
+                    <h3>Entrada de Ramos</h3>
+                    <p>Celebrada durante el Domingo de Ramos, representa la entrada triunfal de Jesús a Jerusalén, simbolizando su reconocimiento como rey y la aclamación del pueblo.</p>
+                    <p>En Sicaya, esta celebración se manifiesta con la presencia de burritos cargados de frutas que acompañan a Cristo Rey en procesión. Es una tradición arraigada en la comunidad, donde la devoción y el fervor se unen para conmemorar este evento religioso importante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>Municipalidad Distrital de Sicaya</h3>
+            <p>Promoviendo el desarrollo integral de nuestro distrito</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <p>© 2025 Sicaya - Huancayo, Junín, Perú</p>
+        </div>
+    </footer>
+</body>
+</html>
